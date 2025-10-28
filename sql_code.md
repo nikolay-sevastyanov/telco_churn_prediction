@@ -70,5 +70,5 @@ INSERT INTO telco_payment (customer_id, contract, paperless_billing, payment_met
 SELECT customer_id, contract, paperless_billing, payment_method, monthly_charges, total_charges
 FROM telco_churn
 
-SELECT * FROM telc
+SELECT * FROM telco_churn
 ```
