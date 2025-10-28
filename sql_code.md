@@ -1,4 +1,4 @@
-```postgresql
+```sql
 DROP TABLE IF EXISTS telco_customer_status;
 CREATE TABLE telco_customer_status (
 customer_id varchar PRIMARY KEY,
@@ -68,7 +68,7 @@ total_charges float (2)
 
 INSERT INTO telco_payment (customer_id, contract, paperless_billing, payment_method, monthly_charges, total_charges)
 SELECT customer_id, contract, paperless_billing, payment_method, monthly_charges, total_charges
-```
 FROM telco_churn
 
 SELECT * FROM telc
+```
